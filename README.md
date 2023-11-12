@@ -69,3 +69,6 @@ npm run test:e2e -- --debug
 ```sh
 npm run lint
 ```
+
+### Dockerizing Vue3 Apps
+https://v2.vuejs.org/v2/cookbook/dockerize-vuejs-app
