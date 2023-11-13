@@ -10,9 +10,11 @@ npm install
 
 ### Docker Commands
 In the project root run the following: 
+
+```docker
 docker build -t websites/static-vue3-frontend-skeleton .
 docker run -it -p 8080:80 --rm --name static-vue3-frontend-1  websites/static-vue3-frontend-skeleton
-
+```
 
 ### Compile and Hot-Reload for Development
 
