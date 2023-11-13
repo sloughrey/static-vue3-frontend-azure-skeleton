@@ -8,11 +8,11 @@ import { LogLevel } from '@azure/msal-browser'
 export const msalConfig = {
   auth: {
     // 'Application (client) ID' of app registration in Azure portal - this value is a GUID
-    clientId: '047eb6ad-52c9-4d24-bdb6-ee9386c5e133',
+    clientId: <string> import.meta.env.VITE_CLIENT_ID,
     // Full directory URL, in the form of https://login.microsoftonline.com/<tenant-id>
-    authority: 'https://login.microsoftonline.com/f6c69f6a-8660-4441-b465-a537a90e1baf',
+    authority: <string> import.meta.env.VITE_AUTHORITY,
     // Full redirect URL, in form of http://localhost:5173
-    redirectUri: 'http://localhost:5173'
+    redirectUri: <string> import.meta.env.VITE_REDIRECT_URL
   },
   /* cache: {
         //cacheLocation: "sessionStorage", // This configures where your cache will be stored
